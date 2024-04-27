@@ -1,9 +1,21 @@
 import { FC } from "react";
 import SocialsList from "../components/Socials";
-import { fetchSocials } from "../fetch/fetch-api";
+// import { fetchSocials } from "../fetch/fetch-api";
 
 const Home: FC = async (): Promise<JSX.Element> => {
-  const data = await fetchSocials();
+  // const data = await fetchSocials();
+  const data = [
+    {
+      id: 1,
+      icon: "youtube",
+      path: "https://youtube.com/",
+    },
+    {
+      id: 2,
+      icon: "instagram",
+      path: "https://instagram.com/",
+    },
+  ];
 
   return (
     <div className="animation h-[35rem]">
